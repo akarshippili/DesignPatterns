@@ -1,7 +1,5 @@
 package com.akarsh.designpatterns.decorator;
 
-import java.util.Vector;
-
 public abstract class CondimentDecorator extends Beverage {
     private Beverage beverage;
 
