@@ -1,5 +1,6 @@
 package com.akarsh.designpatterns.observer;
 
+import java.util.ArrayList;
 import java.util.List;
 
 public abstract class School {
@@ -9,10 +10,10 @@ public abstract class School {
 
     public School(String name){
         this.name = name;
+        this.observers = new ArrayList<>();
     }
 
     abstract void addObserver(Observer observer);
     abstract void removeObserver(Observer observer);
-    abstract void notifyObservers();
-    
+    abstract void notifyObservers(Observer newObserver);
 }
