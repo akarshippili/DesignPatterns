@@ -1,8 +1,8 @@
 package com.akarsh.designpatterns.observer;
 
-public class HighSchool extends School{
+public class MiddleSchool extends School{
 
-    public HighSchool(String name) {
+    public MiddleSchool(String name) {
         super(name);
     }
 

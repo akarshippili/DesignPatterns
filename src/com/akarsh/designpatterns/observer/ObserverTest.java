@@ -4,10 +4,20 @@ public class ObserverTest {
     public static void main(String[] args) {
         HighSchool DPS = new HighSchool("DPS");
 
-        Student student1 = new Student("Student1", DPS);
-        Student student2 = new Student("Student2", DPS);
-        Student student3 = new Student("Student3", DPS);
-        Student student4 = new Student("Student4", DPS);
-        Student student5 = new Student("Student5", DPS);
+        HighSchoolStudent student1 = new HighSchoolStudent("Student1", DPS);
+        HighSchoolStudent student2 = new HighSchoolStudent("Student2", DPS);
+        HighSchoolStudent student3 = new HighSchoolStudent("Student3", DPS);
+        HighSchoolStudent student4 = new HighSchoolStudent("Student4", DPS);
+        DPS.removeStudent(student2);
+        HighSchoolStudent student5 = new HighSchoolStudent("Student5", DPS);
+
+
+        MiddleSchool vignanVidyalaya = new MiddleSchool("Vignan Vidyalaya");
+        MiddleSchoolStudent middleStudent1 = new MiddleSchoolStudent("Student1", vignanVidyalaya);
+        MiddleSchoolStudent middleStudent2 = new MiddleSchoolStudent("Student2", vignanVidyalaya);
+
+        MiddleSchool kendriyaVidyalaya = new MiddleSchool("Kendriya Vidyalaya");
+        MiddleSchoolStudent middleStudent3 = new MiddleSchoolStudent("Student3", kendriyaVidyalaya);
+        MiddleSchoolStudent middleStudent4 = new MiddleSchoolStudent("Student4", kendriyaVidyalaya);
     }
 }

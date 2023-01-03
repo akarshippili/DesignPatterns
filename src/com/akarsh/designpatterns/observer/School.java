@@ -6,14 +6,14 @@ import java.util.List;
 public abstract class School {
 
     String name;
-    List<Observer> observers;
+    List<Student> students;
 
     public School(String name){
         this.name = name;
-        this.observers = new ArrayList<>();
+        this.students = new ArrayList<>();
     }
 
-    abstract void addObserver(Observer observer);
-    abstract void removeObserver(Observer observer);
-    abstract void notifyObservers(Observer newObserver);
+    abstract void addStudent(Student student);
+    abstract void removeStudent(Student student);
+    abstract void notifyStudents(Student newStudent);
 }
