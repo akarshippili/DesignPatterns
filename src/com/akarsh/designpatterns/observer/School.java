@@ -8,7 +8,7 @@ public abstract class School {
     String name;
     List<Student> students;
 
-    public School(String name){
+    protected School(String name){
         this.name = name;
         this.students = new ArrayList<>();
     }
